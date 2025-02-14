@@ -1,0 +1,20 @@
+{
+  "name": "voltarian-css",
+  "version": "0.13.0",
+  "description": "Free, high quality, open source icon library inspired by Warframe.",
+  "author": "voltarian-dev-team",
+  "license": "MIT",
+  "homepage": "https://voltarius.voltaccept.com/VoltarianCSS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Voltarian-Dev-Team/VoltarianCSS.git"
+  },
+  "keywords": [
+    "voltarian",
+    "icons"
+  ],
+  "style": "dist/icons.css",
+  "files": [
+    "dist/fonts"
+  ]
+}

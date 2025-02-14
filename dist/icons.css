@@ -1,42 +1,27 @@
-/*
----------------------------------------------------------------
-                          Import Icons                         
----------------------------------------------------------------
-*/
-
 @font-face {
-    font-family: wf-icons;
-    src: url("https://cdn.jsdelivr.net/gh/Voltarian-Dev-Team/VoltarianCSS@main/dist/fonts/icons.ttf") format("truetype");
-    font-weight: thin;
+    font-display: block;
+    font-family: "voltarian-css";
+    src: url("./fonts/voltarian-css.woff2") format("woff2"),
+  url("./fonts/voltarian-css.woff") format("woff");
+  }
+  
+  .wf::before,
+  [class^="wf-"]::before,
+  [class*=" wf-"]::before {
+    display: inline-block;
+    font-family: voltarian-css !important;
     font-style: normal;
-}
-
-/*
----------------------------------------------------------------
-                           Custom CSS                          
----------------------------------------------------------------
-*/
-
-.wf-icons {
-    font-family: "wf-icons";
-}
-
-.wf-icons .wf-logo::before {
-    content: "\E001";
-}
-
-.wf-icons .wf-logo-alt::before {
-    content: "\E002";
-}
-
-.wf-icons .wf-stalker::before {
-    content: "\E003";
-}
-
-.wf-icons .wf-rveil::before {
-    content: "\E004";
-}
-
-.wf-icons .wf-ducat::before {
-    content: "\E005";
-}
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .wf-logo::before { content: "\e001"; }
+  .wf-logo-alt::before { content: "\e002"; }
+  .wf-stalker::before { content: "\e003"; }
+  .wf-rveil::before { content: "\e004"; }
+  .wf-ducat::before { content: "\e005"; }

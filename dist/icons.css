@@ -25,3 +25,6 @@
   .wf-stalker::before { content: "\e003"; }
   .wf-rveil::before { content: "\e004"; }
   .wf-ducat::before { content: "\e005"; }
+  .wf-orokin::before { content: "\e006"; }
+  .wf-sentient::before { content: "\e007"; }
+  .wf-narmer::before { content: "\e008"; }

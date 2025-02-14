@@ -1,0 +1,37 @@
+/*
+---------------------------------------------------------------
+                          Import Icons                         
+---------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: wf-icons;
+    src: url("icons.ttf") format("truetype");
+    font-weight: thin;
+}
+
+/*
+---------------------------------------------------------------
+                           Custom CSS                          
+---------------------------------------------------------------
+*/
+
+.wf-icons {
+    font-family: "wf-icons";
+}
+
+.wf-icons .wf-lotus::before {
+    content: "\E001";
+}
+
+.wf-icons .wf-stalker::before {
+    content: "\E002";
+}
+
+.wf-icons .wf-rveil::before {
+    content: "\E003";
+}
+
+.wf-icons .wf-ducat::before {
+    content: "\E004";
+}

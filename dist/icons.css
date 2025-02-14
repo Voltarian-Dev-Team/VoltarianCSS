@@ -26,5 +26,5 @@
   .wf-rveil::before { content: "\e004"; }
   .wf-ducat::before { content: "\e005"; }
   .wf-orokin::before { content: "\e006"; }
-  .wf-sentient::before { content: "\e007"; }
-  .wf-narmer::before { content: "\e008"; }
+  .wf-grineer::before { content: "\e007"; }
+  .wf-corpus::before { content: "\e008"; }

@@ -6,8 +6,9 @@
 
 @font-face {
     font-family: wf-icons;
-    src: url("https://voltarian-dev-team.github.io/VoltarianCSS/fonts/icons.ttf") format("truetype");
+    src: url("https://voltarian-dev-team.github.io/VoltarianCSS/dist/fonts/icons.ttf") format("truetype");
     font-weight: thin;
+    font-style: normal;
 }
 
 /*
@@ -20,18 +21,22 @@
     font-family: "wf-icons";
 }
 
-.wf-icons .wf-lotus::before {
+.wf-icons .wf-logo::before {
     content: "\E001";
 }
 
-.wf-icons .wf-stalker::before {
+.wf-icons .wf-logo-alt::before {
     content: "\E002";
 }
 
-.wf-icons .wf-rveil::before {
+.wf-icons .wf-stalker::before {
     content: "\E003";
 }
 
-.wf-icons .wf-ducat::before {
+.wf-icons .wf-rveil::before {
     content: "\E004";
+}
+
+.wf-icons .wf-ducat::before {
+    content: "\E005";
 }

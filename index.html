@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltarianCSS</title>
+    <link rel="stylesheet" href="icons.css">
+    <style>
+        body {
+            background-color: #0f1419;
+            color: #e1e8ed;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #4169e1;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+
+        .icon-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1c2733;
+            border: 1px solid #2f3b4b;
+            border-radius: 0.25rem;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .icon-item:hover {
+            box-shadow: 0 0 15px rgba(65, 105, 225, 0.5);
+            transform: translateY(-0.25rem);
+            border-color: #4169e1;
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #4169e1;
+        }
+
+        .icon-name {
+            font-size: 0.875rem;
+            color: #a4b0be;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>VoltarianCSS</h1>
+        <div class="icon-grid">
+            <div class="icon-item">
+                <div class="icon"><i class="wf-icons wf-logo"></i></div>
+                <div class="icon-name">Logo</div>
+            </div>
+            <div class="icon-item">
+                <div class="icon"><i class="wf-icons wf-logo-alt"></i></div>
+                <div class="icon-name">Alternative Logo</div>
+            </div>
+            <div class="icon-item">
+                <div class="icon"><i class="wf-icons wf-stalker"></i></div>
+                <div class="icon-name">Stalker</div>
+            </div>
+            <div class="icon-item">
+                <div class="icon"><i class="wf-icons wf-rveil"></i></div>
+                <div class="icon-name">Red Veil</div>
+            </div>
+            <div class="icon-item">
+                <div class="icon"><i class="wf-icons wf-logo"></i></div>
+                <div class="icon-name">Ducat</div>
+            </div>
+            <!-- Add more icon items here -->
+        </div>
+    </div>
+</body>
+
+</html>

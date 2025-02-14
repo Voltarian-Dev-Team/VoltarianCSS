@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: wf-icons;
-    src: url("https://voltarian-dev-team.github.io/VoltarianCSS/dist/fonts/icons.ttf") format("truetype");
+    src: url("https://cdn.jsdelivr.net/gh/Voltarian-Dev-Team/VoltarianCSS@main/dist/fonts/icons.ttf") format("truetype");
     font-weight: thin;
     font-style: normal;
 }

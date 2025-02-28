@@ -1,36 +1,55 @@
 /*!
- * Bootstrap Icons v0.13.0 (https://voltarius.voltaccept.com/VoltarianCSS)
+ * VoltarianCSS Icons v0.14.0 (https://voltarius.voltaccept.com/VoltarianCSS)
  * Copyright 2024-2025 The Voltarian Dev Team
  * Licensed under MIT (https://github.com/voltarian-dev-team/VolterianCSS/blob/main/LICENSE)
  */
 
 @font-face {
-    font-display: block;
-    font-family: "voltarian-css";
-    src: url("./fonts/voltarian-css.woff2") format("woff2"),
-  url("./fonts/voltarian-css.woff") format("woff");
-  }
-  
-  .wf::before,
-  [class^="wf-"]::before,
-  [class*=" wf-"]::before {
-    display: inline-block;
-    font-family: voltarian-css !important;
-    font-style: normal;
-    font-weight: normal !important;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .wf-logo::before { content: "\e001"; }
-  .wf-logo-alt::before { content: "\e002"; }
-  .wf-stalker::before { content: "\e003"; }
-  .wf-rveil::before { content: "\e004"; }
-  .wf-ducat::before { content: "\e005"; }
-  .wf-orokin::before { content: "\e006"; }
-  .wf-grineer::before { content: "\e007"; }
-  .wf-corpus::before { content: "\e008"; }
+  font-display: block;
+  font-family: "voltarian-css";
+  src: url("./fonts/voltarian-css.woff2") format("woff2"),
+    url("./fonts/voltarian-css.woff") format("woff");
+}
+
+.wf::before,
+[class^="wf-"]::before,
+[class*=" wf-"]::before {
+  display: inline-block;
+  font-family: voltarian-css !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wf-logo::before {
+  content: "\e001";
+}
+.wf-love::before {
+  content: "\e002";
+}
+.wf-stalker::before {
+  content: "\e003";
+}
+.wf-rveil::before {
+  content: "\e004";
+}
+.wf-ducat::before {
+  content: "\e005";
+}
+.wf-orokin::before {
+  content: "\e006";
+}
+.wf-grineer::before {
+  content: "\e007";
+}
+.wf-corpus::before {
+  content: "\e008";
+}
+.wf-simaris::before {
+  content: "\e009";
+}

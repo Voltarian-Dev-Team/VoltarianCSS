@@ -1,256 +1,306 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VoltarianCSS</title>
-    <link rel="stylesheet" href="https://voltarian-dev-team.github.io/VoltarianCSS/dist/icons.css">
+    <link rel="stylesheet" href="./dist/icons.css" />
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333333;
-            line-height: 1.5;
-        }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        line-height: 1.5;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+      .container {
+        max-width: 2500px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
 
-        .hero {
-            text-align: left;
-            padding: 4rem 0;
-        }
+      .hero {
+        text-align: left;
+        padding: 4rem 0;
+      }
 
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #333333;
-        }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #333333;
+      }
 
-        .hero .subheading {
-            font-size: 1.25rem;
-            color: #666666;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
+      .hero .subheading {
+        font-size: 1.25rem;
+        color: #666666;
+        margin-bottom: 2rem;
+        max-width: 600px;
+      }
 
+      /*
         .new-version {
-            display: inline-block;
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 0.5rem 1rem;
-            border-radius: 2rem;
-            font-size: 0.875rem;
-            margin-bottom: 1.5rem;
+          display: inline-block;
+          background-color: #5c9cba;
+          color: #ffffff;
+          padding: 0.5rem 1rem;
+          border-radius: 2rem;
+          font-size: 0.875rem;
+          margin-bottom: 1.5rem;
         }
+      */
 
-        .cdn-info {
-            background-color: #f8f9fa;
-            border-radius: 0.25rem;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
+      .cdn-info {
+        background-color: #f8f9fa;
+        border-radius: 0.25rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
 
-        .cdn-info code {
-            color: #333333;
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-        }
+      .cdn-info code {
+        color: #333333;
+        font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+          "Courier New", monospace;
+      }
 
-        .copy-btn {
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 0.25rem;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            margin-left: 1rem;
-        }
+      .copy-btn {
+        background-color: #5c9cba;
+        color: #ffffff;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        margin-left: 1rem;
+      }
 
-        .copy-btn:hover {
-            background-color: #0056b3;
-        }
+      .copy-btn:hover {
+        background-color: #417995;
+      }
 
-        .icon-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 1rem;
-        }
+      .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 1rem;
+      }
 
-        .icon-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #f8f9fa;
-            border-radius: 0.5rem;
-            padding: 1.5rem;
-            text-align: center;
-            transition: all 0.2s ease-in-out;
-        }
+      .icon-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        text-align: center;
+        transition: all 0.2s ease-in-out;
+      }
 
-        .icon-item:hover {
-            background-color: #e9ecef;
-        }
+      .icon-item:hover {
+        background-color: #e9ecef;
+      }
 
-        .icon {
-            font-size: 2.5rem;
-            margin-bottom: 0.75rem;
-            color: #333333;
-        }
+      .icon {
+        font-size: 2.5rem;
+        margin-bottom: 0.75rem;
+        color: #333333;
+      }
 
-        .icon-name {
-            font-size: 0.875rem;
-            color: #666666;
-        }
+      .icon-name {
+        font-size: 0.875rem;
+        color: #666666;
+      }
 
-        .footer {
-            text-align: center;
-            margin-top: 3rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid #dee2e6;
-            color: #666666;
-        }
+      .footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid #dee2e6;
+        color: #666666;
+      }
 
-        .footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
+      .footer a {
+        color: #5c9cba;
+        text-decoration: none;
+      }
 
-        .footer a:hover {
-            text-decoration: underline;
-        }
+      .footer a:hover {
+        text-decoration: underline;
+      }
 
-        .search-bar {
-            margin-bottom: 2rem;
-        }
+      .search-bar {
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+      }
 
-        .search-bar input {
-            width: 100%;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            background-color: #ffffff;
-            border: 1px solid #ced4da;
-            color: #333333;
-            border-radius: 0.25rem;
-        }
+      .search-bar input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+        color: #333333;
+        border-radius: 0.25rem;
+      }
 
-        .search-bar input::placeholder {
-            color: #6c757d;
-        }
+      .search-bar input::placeholder {
+        color: #6c757d;
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <div class="hero">
-            <div class="new-version">New Release: v0.13.0</div>
-            <h1>VoltarianCSS Icons</h1>
-            <p class="subheading">Free, high quality, open source icon library inspired by Warframe.</p>
-            <div class="cdn-info">
-                <h2>Stylesheet</h2>
-                <code>&lt;link rel="stylesheet" href="https://voltarian-dev-team.github.io/VoltarianCSS/dist/icons.css"&gt;</code>
-                <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
-            </div>
+      <div class="hero">
+        <!--
+          <div class="new-version">New Release: v0.13.0</div>
+        -->
+        <center>
+          <h1>VoltarianCSS</h1>
+          <p class="subheading">
+            Free, high quality, open source icon library inspired by Warframe.
+          </p>
+
+          <div class="cdn-info">
+            <h2>Stylesheet</h2>
+            <code
+              >&lt;link rel="stylesheet"
+              href="https://voltarian-dev-team.github.io/VoltarianCSS/dist/icons.css"&gt;</code
+            >
+            <button class="copy-btn" onclick="copyToClipboard()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"
+                />
+                <path
+                  d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </button>
+          </div>
+        </center>
+      </div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="icon-search"
+          placeholder="Search icons..."
+          onkeyup="filterIcons()"
+        />
+      </div>
+      <div class="icon-grid">
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-logo"></i></div>
+          <div class="icon-name">Warframe Logo</div>
         </div>
-        <div class="search-bar">
-            <input type="text" id="icon-search" placeholder="Search icons..." onkeyup="filterIcons()">
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-love"></i></div>
+          <div class="icon-name">Warframe Love</div>
         </div>
-        <div class="icon-grid">
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-logo"></i></div>
-                <div class="icon-name">Logo</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-logo-alt"></i></div>
-                <div class="icon-name">Alternative Logo</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-stalker"></i></div>
-                <div class="icon-name">Stalker</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-rveil"></i></div>
-                <div class="icon-name">Red Veil</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-ducat"></i></div>
-                <div class="icon-name">Ducat</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-orokin"></i></div>
-                <div class="icon-name">Orokin</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-grineer"></i></div>
-                <div class="icon-name">Grineer</div>
-            </div>
-            <div class="icon-item">
-                <div class="icon"><i class="wf wf-corpus"></i></div>
-                <div class="icon-name">Corpus</div>
-            </div>
-            <!-- Add more icon items here -->
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-stalker"></i></div>
+          <div class="icon-name">Stalker</div>
         </div>
-        <footer class="footer">
-            <p>Currently v0.13.0 • <a href="https://github.com/Voltarian-Dev-Team/VoltarianCSS/">GitHub repo</a></p>
-        </footer>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-rveil"></i></div>
+          <div class="icon-name">Red Veil</div>
+        </div>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-ducat"></i></div>
+          <div class="icon-name">Ducat</div>
+        </div>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-orokin"></i></div>
+          <div class="icon-name">Orokin</div>
+        </div>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-grineer"></i></div>
+          <div class="icon-name">Grineer</div>
+        </div>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-corpus"></i></div>
+          <div class="icon-name">Corpus</div>
+        </div>
+        <div class="icon-item">
+          <div class="icon"><i class="wf wf-simaris"></i></div>
+          <div class="icon-name">Cephalon Simaris</div>
+        </div>
+        <!-- Add more icon items here -->
+      </div>
+      <footer class="footer">
+        <p>
+          Currently v0.14.0 •
+          <a href="https://github.com/Voltarian-Dev-Team/VoltarianCSS/"
+            >GitHub repo</a
+          >
+          •
+          <a
+            href="https://github.com/Voltarian-Dev-Team/VoltarianCSS/blob/main/LICENSE"
+            >Licensed Under MIT</a
+          >
+        </p>
+      </footer>
     </div>
     <script>
-        function copyToClipboard() {
-            const scriptTag = document.querySelector('.cdn-info code').textContent;
-            navigator.clipboard.writeText(scriptTag).then(() => {
-                showNotification('Script tag copied to clipboard!');
-            }).catch(err => {
-                console.error('Failed to copy: ', err);
-                showNotification('Failed to copy. Please try again.', 'error');
-            });
+      function copyToClipboard() {
+        const scriptTag = document.querySelector(".cdn-info code").textContent;
+        navigator.clipboard
+          .writeText(scriptTag)
+          .then(() => {
+            // showNotification("Script tag copied to clipboard!");
+          })
+          .catch((err) => {
+            console.error("Failed to copy: ", err);
+            // showNotification("Failed to copy. Please try again.", "error");
+          });
+      }
+
+      function showNotification(message, type = "success") {
+        const notification = document.createElement("div");
+        notification.className = "notification";
+        notification.textContent = message;
+
+        if (type === "error") {
+          notification.style.backgroundColor = "#f44336";
         }
 
-        function showNotification(message, type = 'success') {
-            const notification = document.createElement('div');
-            notification.className = 'notification';
-            notification.textContent = message;
+        document.body.appendChild(notification);
+        notification.offsetHeight;
+        notification.classList.add("show");
+        setTimeout(() => {
+          notification.classList.remove("show");
+          setTimeout(() => {
+            document.body.removeChild(notification);
+          }, 500);
+        }, 3000);
+      }
 
-            if (type === 'error') {
-                notification.style.backgroundColor = '#f44336';
-            }
+      function filterIcons() {
+        const searchInput = document.getElementById("icon-search");
+        const filter = searchInput.value.toLowerCase();
+        const iconItems = document.getElementsByClassName("icon-item");
 
-            document.body.appendChild(notification);
-            notification.offsetHeight;
-            notification.classList.add('show');
-            setTimeout(() => {
-                notification.classList.remove('show');
-                setTimeout(() => {
-                    document.body.removeChild(notification);
-                }, 500);
-            }, 3000);
+        for (let i = 0; i < iconItems.length; i++) {
+          const iconName = iconItems[i].getElementsByClassName("icon-name")[0];
+          const txtValue = iconName.textContent || iconName.innerText;
+          if (txtValue.toLowerCase().indexOf(filter) > -1) {
+            iconItems[i].style.display = "";
+          } else {
+            iconItems[i].style.display = "none";
+          }
         }
-
-        function filterIcons() {
-            const searchInput = document.getElementById('icon-search');
-            const filter = searchInput.value.toLowerCase();
-            const iconItems = document.getElementsByClassName('icon-item');
-
-            for (let i = 0; i < iconItems.length; i++) {
-                const iconName = iconItems[i].getElementsByClassName('icon-name')[0];
-                const txtValue = iconName.textContent || iconName.innerText;
-                if (txtValue.toLowerCase().indexOf(filter) > -1) {
-                    iconItems[i].style.display = "";
-                } else {
-                    iconItems[i].style.display = "none";
-                }
-            }
-        }
-        document.getElementById('icon-search').addEventListener('input', filterIcons);
+      }
+      document
+        .getElementById("icon-search")
+        .addEventListener("input", filterIcons);
     </script>
-</body>
-
+  </body>
 </html>
